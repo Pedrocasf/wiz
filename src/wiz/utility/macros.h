@@ -7,6 +7,7 @@
 #elif defined(__clang__) || defined(__GNUC__)
 #define WIZ_FORCE_INLINE inline __attribute__((always_inline))
 #define WIZ_MAYBE_UNUSED_FORCE_INLINE(x) __attribute__((always_inline)) __attribute__((unused)) inline x
+#include <stdint.h>
 #else
 #define WIZ_FORCE_INLINE inline
 #define WIZ_MAYBE_UNUSED_FORCE_INLINE(x) inline x
